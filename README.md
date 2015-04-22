@@ -8,7 +8,7 @@ Java SE Web Services Library to send HTTP GET, POST requests, send File Attachme
 #Syntax
 The CPWebSerice will use following basic syntax to send any HTTP GET, POST Request to a web address.
 
-  CPWebService login = new CPWebService("http://yoururl/", new codepik.CPWebServiceResponse() {
+    CPWebService login = new CPWebService("http://yoururl/", new codepik.CPWebServiceResponse() {
           
             @Override
             public void getAPIResponse(CPResponse output) {
@@ -19,12 +19,12 @@ The CPWebSerice will use following basic syntax to send any HTTP GET, POST Reque
                 
             }
         });
-  
-  //Optional : add parameters to the request body      
-  login.addParameter("parameter1","value");
-  login.addParameter("parameter2","value");
-  
-  //send the request to the server URL provided
-  login.run();
+        
+    //Optional : add parameters to the request body      
+    login.addParameter("parameter1","value");
+    login.addParameter("parameter2","value");
+      
+    //send the request to the server URL provided
+    login.run();
 
 
